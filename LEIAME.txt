@@ -1,0 +1,59 @@
+#LEIAME
+
+WAIrty - Chatbot Inteligente para Atendimento ao Cliente
+Projeto 02: Pipeline para o Chatbot de Atendimento ao Cliente
+
+Descrição do Projeto:Este projeto é uma pipeline para um chatbot que atende clientes. Utilizando a biblioteca LangChain, ele integra modelos de linguagem de última geração (LLMs) para gerar respostas e fornecer funcionalidades de linguagem avançadas. O objetivo principal é facilitar a instalação das dependências e a execução dos scripts necessários, garantindo que o projeto funcione de forma robusta e eficiente.
+
+Estrutura do Projeto:
+bash
+Copiar código
+/pipeline_chatbot
+│
+├── script01_instalacao_pacotes.py      # Instala pacotes necessários
+├── script02_carregamento_variaveis.py    # Carrega variáveis de ambiente
+├── script03_construcao_modelo.py         # Constrói o modelo do chatbot
+├── script04_executa_pipeline.py           # Executa a pipeline completa
+├── requirements.txt                      # Dependências do projeto
+├── .env                                   # Variáveis de ambiente
+└── LEIAME.txt                             # Documentação do projeto
+
+Pré-requisitos:
+Python: Certifique-se de ter o Python instalado em seu sistema. Este projeto foi testado com a versão 3.12.
+
+Instalação e Clone o repositório:
+bash
+Copiar código
+git clone https://github.com/seu-usuario/chatbot-pipeline.git
+
+cd chatbot-pipeline:
+Crie o arquivo .env: Na raiz do projeto, crie um arquivo chamado .env e adicione suas variáveis de ambiente. Por exemplo:
+makefile
+Copiar código
+API_KEY=seu_api_key_aqui
+OUTRA_VARIAVEL=valor
+
+Execução do Projeto:
+Após instalar as dependências e configurar o arquivo .env, execute a pipeline do chatbot com este comando:
+bash
+Copiar código
+python script04_executa_pipeline.py
+
+Ordem de Execução:
+Este comando executará os scripts na seguinte ordem:
+script01_instalacao_pacotes.py: Verifica e instala os pacotes necessários.
+script02_carregamento_variaveis.py: Carrega as variáveis de ambiente a partir do arquivo .env.
+script03_construcao_modelo.py: Constrói o modelo do chatbot utilizando os LLMs.
+script04_executa_pipeline.py: Finaliza a execução e inicia a aplicação.
+
+Modelos de Linguagem Utilizados (LLMs):
+O projeto utiliza diferentes modelos de linguagem da biblioteca LangChain, como:
+Hugging Face Transformers: Para acesso a diversos modelos de linguagem pré-treinados, que podem ser utilizados para geração de texto e compreensão de linguagem natural.
+OpenAI: Utiliza APIs que permitem interagir com modelos avançados de linguagem da OpenAI, como o GPT, para fornecer respostas contextuais e relevantes durante o atendimento ao cliente.
+Ollama: Uma plataforma que permite o uso de modelos de linguagem de código aberto, proporcionando uma alternativa acessível para interação com chatbots e sistemas de atendimento.
+
+Como Contribuir:
+Se você quiser ajudar com melhorias ou correções, pode abrir uma issue ou enviar um pull request. Entre em contato através do e-mail: valtertuccijr@gmail.com.
+
+Licença:
+Este projeto é de código aberto e proibido para uso comercial. Fique à vontade para usar e modificar conforme necessário, mas lembre-se que é destinado apenas para estudos e práticas.
